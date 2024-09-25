@@ -6,24 +6,25 @@ import BigButton from '../styled-components/BigButton.vue'
 import visable from '../../assets/icons/visable.svg'
 import notVisable from '../../assets/icons/notVisable.svg'
 
+import { API_Login_output } from '../../datasource/API/LoginApi'
 
-const props = defineProps(['desText'])
 
-const loginData = reactive({
-    code: '+98',
-    phoneNumber: '',
+const props = defineProps<{
+    desText: string
+}>()
+
+const loginData = reactive<API_Login_output>({
+    phoneNumber: null,
     password: ''
 })
 
-const passwordVisablity = ref(false)
+const passwordVisablity = ref<boolean>(false)
 
 const submitData = () => {
     
 }
 
-const togglePasswordVisability = () => {
-    passwordVisablity.value = !passwordVisablity.value
-}
+const togglePasswordVisability = () => passwordVisablity.value = !passwordVisablity.value
 
 
 </script>
@@ -35,8 +36,8 @@ const togglePasswordVisability = () => {
         <form class="text-black flex flex-col justify-between w-full h-full" @submit.prevent="submitData">
             <span>
                 <div class=" flex items-center w-full">
-                    <input v-model="loginData.code" class="bg-transparent focus:outline-none border rounded-lg w-12 text-center mr-1 p-2 font-light text-sm" />
-                    <input v-model="loginData.phoneNumber" class="bg-transparent focus:outline-none border rounded-lg p-2 text-sm font-light w-full" dir="rtl" placeholder="شماره تلفن" />
+                    <input value="+98" class="bg-transparent focus:outline-none border rounded-lg w-12 text-center mr-1 p-2 font-light text-sm" />
+                    <input type="number" v-model="loginData.phoneNumber" class="bg-transparent focus:outline-none border rounded-lg p-2 text-sm font-light w-full" dir="rtl" placeholder="شماره تلفن" />
                 </div>
                 <div class=" flex items-center w-full mt-3">
                     <span class="border rounded-lg border-r-0 w-12 p-2 rounded-r-0" @click="togglePasswordVisability" >
