@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import LoginSlider from '../components/Sliders/LoginSlider.vue'
-import LoginHeader from '../components/headers/loginHeader.vue'
+import LoginHeader from '../components/headers/LoginHeader.vue'
 import ChangePasswordForm from '../components/forms/ChangePasswordForm.vue'
 
 const desText = `کد ارسال شده به شماره تلفن ${88} را وارد کنید` 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import LoginSlider from '../components/Sliders/LoginSlider.vue'
-import LoginHeader from '../components/headers/loginHeader.vue'
+import LoginHeader from '../components/headers/LoginHeader.vue'
 import LoginForm from '../components/forms/LoginForm.vue'
 
 </script>
