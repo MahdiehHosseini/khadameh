@@ -1,3 +1,6 @@
 [submodule "khadameh/tsitfy"]
 	path = khadameh/tsitfy
 	url = https://code.ts.co.ir/designsystem/vuejs.git
+[submodule "khadameh/ds"]
+	path = khadameh/ds
+	url = https://code.ts.co.ir/designsystem/vuejs.git
