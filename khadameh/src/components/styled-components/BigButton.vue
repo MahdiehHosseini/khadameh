@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps(['text', 'subText', 'link'])
+const props = defineProps<{
+    text: string,
+    subText: string,
+    link: string
+}>()
 
 </script>
 
