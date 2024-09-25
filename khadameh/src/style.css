@@ -3,3 +3,11 @@ body {
     background: url('./assets/images/frame.png') #fff5e7 repeat fixed ;
     background-size: contain;
 }
+
+@layer utilities {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
