@@ -18,7 +18,7 @@ const submitData = () => {
 <template>
     <div class="w-full h-full">
         <p class="mb-5 text-sm text-center text-black font-medium">{{ props.desText }}</p>
-        <form class="text-black flex flex-col justify-between w-full h-full" @submit.prevent="submitData">
+        <form class="text-black flex flex-col justify-between w-full h-5/6" @submit.prevent="submitData">
             <span>
                 <!-- <input /> -->
             </span>

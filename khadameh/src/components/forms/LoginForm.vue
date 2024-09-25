@@ -33,7 +33,7 @@ const togglePasswordVisability = () => passwordVisablity.value = !passwordVisabl
 <template>
     <div class="w-full h-full">
         <p class="mb-5 text-sm text-center text-black font-medium">{{ props.desText }}</p>
-        <form class="text-black flex flex-col justify-between w-full h-full" @submit.prevent="submitData">
+        <form class="text-black flex flex-col justify-between w-full h-5/6" @submit.prevent="submitData">
             <span>
                 <div class=" flex items-center w-full">
                     <input value="+98" class="bg-transparent focus:outline-none border rounded-lg w-12 text-center mr-1 p-2 font-light text-sm" />
