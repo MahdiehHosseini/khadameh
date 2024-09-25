@@ -3,9 +3,6 @@ import { ref, defineProps } from 'vue';
 
 import BigButton from '../styled-components/BigButton.vue'
 
-import visable from '../../assets/icons/visable.svg'
-import notVisable from '../../assets/icons/notVisable.svg'
-
 
 const props = defineProps(['desText'])
 
@@ -25,7 +22,7 @@ const submitData = () => {
             <span>
                 <!-- <input /> -->
             </span>
-            <BigButton text="تایید" subText="ارسال مجدد" link="" />
+            <BigButton text="تایید" subText="ارسال مجدد" link="/newpassword" />
         </form>
     </div>
 </template>
