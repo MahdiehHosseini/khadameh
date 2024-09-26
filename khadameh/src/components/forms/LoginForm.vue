@@ -4,7 +4,7 @@ import TButton from '@components/TButton.vue';
 import TInputMobile from '@@/components/TInputMobile.vue'
 import TInputPassword from '@@/components/TInputPassword.vue'
 
-import { API_Login_output } from '../../datasource/API/LoginApi'
+import { API_Login_output } from '@/datasource/API/LoginApi'
 
 
 const props = defineProps<{
@@ -30,7 +30,7 @@ const submitData = () => {
         <form class="text-black flex flex-col justify-between w-full h-full" @submit.prevent="submitData">
             <span dir="ltr">
                 <!-- <TInputMobile /> -->
-                 <TInputPassword class="mt-3" />
+                 <TInputPassword inputDirection="ltr" label="رمز عبور" dir="rtl" class="mt-3" />
             </span>
             <div class="w-full text-center">
                 <TButton class="w-full mb-3" color="success" btnCorners="curve" size="large" styleType="text" >تایید</TButton>

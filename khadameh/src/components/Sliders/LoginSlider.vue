@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import slider1 from '../../assets/images/slider1.png'
+import slider1 from '@/assets/images/slider1.png'
 
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import khadameLogo from '../../assets/images/khadameh.png'
+import khadameLogo from '@/assets/images/khadameh.png'
 
 import { defineProps } from 'vue'
 
