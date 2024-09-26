@@ -6,11 +6,6 @@ import TInputPassword from '@@/components/TInputPassword.vue'
 
 import { API_Login_output } from '@/datasource/API/LoginApi'
 
-
-const props = defineProps<{
-    desText: string
-}>()
-
 const loginData = reactive<API_Login_output>({
     phoneNumber: null,
     password: ''
@@ -26,7 +21,7 @@ const submitData = () => {
 
 <template>
     <div class="w-full flex flex-col items-center h-full">
-        <p class="mb-5 text-sm text-center text-black font-medium">{{ props.desText }}</p>
+        <p class="mb-5 text-sm text-center text-black font-medium">جهت ورود اطلاعات خود را وارد کنید</p>
         <form class="text-black flex flex-col justify-between w-full h-full" @submit.prevent="submitData">
             <span dir="ltr">
                 <!-- <TInputMobile /> -->

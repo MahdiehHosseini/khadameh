@@ -16,7 +16,7 @@ const desText = `لطفا رمز عبور جدید خود را وارد کنید
                 <BackArrow text="بازگشت" link="/login" />
                 <span class="flex flex-col items-center justify-center h-full w-full">
                     <LoginHeader subText="" mainText="بازنشانی رمز عبور" />
-                    <NewPasswordForm :desText="desText" />
+                    <NewPasswordForm />
                 </span>
             </section>
             <LoginSlider />

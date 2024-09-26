@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
 
 import TInputOTP from '@@/components/TInputOTP.vue';
 import TButton from '@components/TButton.vue';
 import TTimer from '@components/TTimer.vue';
 import { BaseI18n } from '@repository/I18n';
-
-
-const props = defineProps(['desText'])
 
 const submitData = () => {
     
@@ -18,7 +14,7 @@ const submitData = () => {
 
 <template>
     <div class="w-full h-full">
-        <p class="mb-5 text-sm text-center text-black font-medium">{{ props.desText }}</p>
+        <p class="mb-5 text-sm text-center text-black font-medium">{{ `کد ارسال شده به شماره 090000 را وارد کنید` }}</p>
         <form class="text-black flex flex-col justify-between w-full h-5/6" @submit.prevent="submitData">
             <TInputOTP label="کد تایید" type="number" />
             <div class="w-full"> 

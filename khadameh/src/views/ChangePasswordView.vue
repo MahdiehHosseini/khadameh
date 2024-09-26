@@ -5,8 +5,6 @@ import LoginHeader from '@/components/headers/LoginHeader.vue'
 import ChangePasswordForm from '@/components/forms/ChangePasswordForm.vue'
 import BackArrow from '@/components/styled-components/BackArrow.vue'
 
-const desText = `کد ارسال شده به شماره تلفن ${88} را وارد کنید` 
-
 </script>
 
 <template>
@@ -15,7 +13,7 @@ const desText = `کد ارسال شده به شماره تلفن ${88} را وا
             <BackArrow text="بازگشت" link="/login" />
             <span class="flex flex-col items-center justify-center h-full w-full">
                 <LoginHeader subText="" mainText="فراموشی رمز عبور" />
-                <ChangePasswordForm :desText="desText" />
+                <ChangePasswordForm />
             </span>
         </section>
         <LoginSlider />
