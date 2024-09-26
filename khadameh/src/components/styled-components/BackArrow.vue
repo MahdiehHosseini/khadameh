@@ -13,7 +13,7 @@ const props = defineProps<{
 
 <template>
     
-    <RouterLink :to="link" class="flex items-center w-full mb-14">
+    <RouterLink :to="link" class="flex items-center w-full mb-56px">
          <TIcon src="@icons/b-arrow-right-2.svg" class="w-5 h-5 ml-2" />
         <p class="font-medium text-lg">{{ props.text }}</p>
     </RouterLink>
