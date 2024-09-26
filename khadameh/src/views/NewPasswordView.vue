@@ -5,8 +5,6 @@ import LoginHeader from '@/components/headers/loginHeader.vue'
 import NewPasswordForm from '@/components/forms/NewPasswordForm.vue'
 import BackArrow from '@/components/styled-components/BackArrow.vue'
 
-const desText = `لطفا رمز عبور جدید خود را وارد کنید، رمز باید شامل اعداد و حروف انگلیسی و یک کاراکتر خاص ( !#$%@ ) باشد`
-
 </script>
 
 <template>

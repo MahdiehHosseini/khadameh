@@ -3,7 +3,10 @@ import khadameLogo from '@/assets/images/khadameh.png'
 
 import { defineProps } from 'vue'
 
-const props = defineProps(['subText', 'mainText'])
+const props = defineProps<{
+    subText: string,
+    mainText: string
+}>()
 
 </script>
 

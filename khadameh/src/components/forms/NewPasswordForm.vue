@@ -3,7 +3,7 @@
 import TButton from '@components/TButton.vue';
 import TInputPassword from '@components/TInputPassword.vue'
 
-const submitData = () => {
+function submitData() {
     
 }
 

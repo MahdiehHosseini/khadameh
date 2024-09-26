@@ -11,7 +11,7 @@ const loginData = reactive<API_Login_output>({
     password: ''
 })
 
-const submitData = () => {
+function submitData() {
     
 }
 

@@ -5,7 +5,7 @@ import TButton from '@components/TButton.vue';
 import TTimer from '@components/TTimer.vue';
 import { BaseI18n } from '@repository/I18n';
 
-const submitData = () => {
+function submitData() {
     
 }
 
