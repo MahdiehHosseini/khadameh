@@ -1,19 +1,23 @@
 <script setup lang="ts">
 
-import LoginSlider from '../components/Sliders/LoginSlider.vue'
-import LoginHeader from '../components/headers/loginHeader.vue'
-import NewPasswordForm from '../components/forms/NewPasswordForm.vue'
-
-const desText = `لطفا رمز عبور جدید خود را وارد کنید، رمز باید شامل اعداد و حروف انگلیسی و یک کاراکتر خاص ( !#$%@ ) باشد`
+import LoginSlider from '@/components/Sliders/LoginSlider.vue'
+import LoginHeader from '@/components/headers/loginHeader.vue'
+import NewPasswordForm from '@/components/forms/NewPasswordForm.vue'
+import BackArrow from '@/components/styled-components/BackArrow.vue'
 
 </script>
 
 <template>
-    <div class="flex w-full justify-center items-center h-screen 2xl:p-24">
-        <LoginSlider />
-        <section class=" flex w-1/2 h-full flex-col items-center pt-16 pb-8 md:py-34 2xl:py-14  md:mx-40 2xl:mx-52 xs:mx-32 xl:w-1/2">
-            <LoginHeader subText="" mainText="بازنشانی رمز عبور" />
-            <NewPasswordForm :desText="desText" />
-        </section>
+    <div class="flex w-full justify-center items-center h-screen">
+        <div class="flex w-1300px justify-center h-full items-center ">
+            <section class=" flex md:w-1/2 md:py-16 md:mx-40 w-full h-full flex-col items-center pt-10 pb-8 xl:w-1/2">
+                <BackArrow text="بازگشت" link="/login" />
+                <span class="flex flex-col items-center justify-center h-full w-full">
+                    <LoginHeader subText="" mainText="بازنشانی رمز عبور" />
+                    <NewPasswordForm />
+                </span>
+            </section>
+            <LoginSlider />
+        </div>
     </div>
 </template>

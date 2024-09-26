@@ -18,7 +18,16 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@icons/*": ["./ds/src/assets/icons/*"],      
+      "@components/*": ["./ds/src/components/*"],     
+      "@hooks/*": ["./ds/src/hooks/*"],      
+      "@repository/*": ["./ds/src/repository/*"],     
+       "@@/*": ["./ds/src/*"],
+      "tsitfy/*": ["./ds/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
