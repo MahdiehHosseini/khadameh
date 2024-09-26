@@ -9,8 +9,8 @@ import BackArrow from '@/components/styled-components/BackArrow.vue'
 
 <template>
     <div class="flex w-full justify-center items-center h-screen">
-        <div class="w-full 2xl:w-5/6 flex w-full justify-center items-center h-full">
-            <section class=" flex md:(w-1/2 py-16 mx-40) w-full h-full flex-col items-center pt-10 pb-8 xl:w-1/2">
+        <div class="flex w-1300px justify-center h-full items-center ">
+            <section class=" flex md:w-1/2 md:py-16 md:mx-40 w-full h-full flex-col items-center pt-10 pb-8 xl:w-1/2">
                 <BackArrow text="بازگشت" link="/login" />
                 <span class="flex flex-col items-center justify-center h-full w-full">
                     <LoginHeader subText="" mainText="بازنشانی رمز عبور" />

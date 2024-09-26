@@ -20,9 +20,9 @@ function submitData() {
 
 
 <template>
-    <div class="w-full flex flex-col items-center h-full">
+    <div class="w-full flex flex-col items-center h-full xl:h-auto">
         <p class="mb-5 text-sm text-center text-black font-medium">جهت ورود اطلاعات خود را وارد کنید</p>
-        <form class="text-black flex flex-col justify-between w-full h-full" @submit.prevent="submitData">
+        <form class="text-black flex flex-col justify-between w-full h-full xl:h-380px" @submit.prevent="submitData">
             <span dir="ltr">
                 <!-- <TInputMobile /> -->
                  <TInputPassword inputDirection="ltr" label="رمز عبور" dir="rtl" class="mt-3" />

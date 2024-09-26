@@ -15,7 +15,7 @@ function submitData() {
 <template>
     <div class="w-full h-full">
         <p class="mb-5 text-sm text-center text-black font-medium">{{ `کد ارسال شده به شماره 090000 را وارد کنید` }}</p>
-        <form class="text-black flex flex-col justify-between w-full h-5/6" @submit.prevent="submitData">
+        <form class="text-black flex flex-col justify-between w-full h-5/6 xl:h-380px" @submit.prevent="submitData">
             <TInputOTP label="کد تایید" type="number" />
             <div class="w-full"> 
                 <TButton class="w-full" color="success" btnCorners="curve" size="large" styleType="text" >ارسال کد</TButton>
